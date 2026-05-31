@@ -1391,3 +1391,72 @@ footer{
   padding-top: 100px;
 
 }
+
+@media(max-width: 768px){
+
+  section{
+    padding: 80px 6%;
+  }
+
+  h2{
+    font-size: 42px;
+    line-height: 1.15;
+    word-break: normal;
+  }
+
+  .skills-grid,
+  .projects-grid{
+    width: 100%;
+  }
+
+  .skill-card,
+  .project-card,
+  .cv-card,
+  .contact-card{
+    width: 100%;
+    max-width: 100%;
+    padding: 28px 22px;
+  }
+
+  .cv-card{
+    overflow: hidden;
+  }
+
+  .cv-frame,
+  iframe{
+    width: 100%;
+    max-width: 100%;
+    height: 420px;
+  }
+
+  .cv-actions{
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .cv-actions a,
+  .cv-actions button{
+    width: 100%;
+  }
+
+  .badge{
+    font-size: 15px;
+    padding: 12px 20px;
+  }
+
+  nav{
+    height: auto;
+    padding: 14px 6%;
+  }
+
+  .logo{
+    width: 70px;
+    height: 70px;
+  }
+
+  .contact-btn{
+    padding: 14px 24px;
+    font-size: 15px;
+  }
+}
