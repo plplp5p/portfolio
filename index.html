@@ -1,0 +1,580 @@
+<!-- =========================
+     DOCUMENT SETUP
+     إعداد الصفحة وربط ملفات المشروع
+========================= -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- يدعم اللغة العربية والإيموجي والرموز -->
+  <meta charset="UTF-8" />
+
+  <!-- يجعل الموقع مناسبًا للجوال والشاشات المختلفة -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- عنوان الصفحة في تبويب المتصفح -->
+  <title>SARAH ALWADI | Portfolio</title>
+
+  <!-- ربط ملف التصميم CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+
+<body>
+
+  <!-- =========================
+       ANIMATED BACKGROUND
+       رموز متحركة في خلفية الموقع
+  ========================= -->
+  <div class="animated-bg">
+    <span class="bg-shape shape1">💻</span>
+    <span class="bg-shape shape2">🎨</span>
+    <span class="bg-shape shape3">🤖</span>
+    <span class="bg-shape shape4">🧠</span>
+    <span class="bg-shape shape5">✨</span>
+    <span class="bg-shape shape6">📱</span>
+    <span class="bg-shape shape7">⚡</span>
+    <span class="bg-shape shape8">🖥️</span>
+    <span class="bg-shape shape9">☁️</span>
+    <span class="bg-shape shape10">🎧</span>
+    <span class="bg-shape shape11">🌐</span>
+    <span class="bg-shape shape12">&lt;/&gt;</span>
+  </div>
+
+  <!-- =========================
+       NAVBAR
+       الشريط العلوي وروابط التنقل
+  ========================= -->
+  <nav>
+
+    <!-- شعار SA -->
+    <div class="logo">
+      <span class="logo-s">S</span>
+      <span class="logo-a">A</span>
+    </div>
+
+    <!-- روابط الأقسام -->
+    <ul>
+      <li><a href="#about">ABOUT</a></li>
+      <li><a href="#skills">SKILLS</a></li>
+      <li><a href="#projects">PROJECTS</a></li>
+      <li><a href="#cv">CV</a></li>
+      <li><a href="#contact">CONTACT</a></li>
+    </ul>
+
+    <!-- زر التواصل السريع -->
+    <a class="hire-btn" href="#contact">
+      CONTACT WITH ME
+    </a>
+
+  </nav>
+
+  <!-- =========================
+       HERO SECTION
+       أول قسم يظهر للزائر
+  ========================= -->
+  <section class="hero">
+
+    <!-- نصوص المقدمة -->
+    <div class="hero-text">
+
+      <p class="badge">
+        ● Available
+      </p>
+
+      <h1>
+        Digital Creator
+        <span>SARAH ALWADI</span>
+      </h1>
+
+      <h2>
+        A Computer Science graduate passionate about technology,
+        creativity, and innovation.
+      </h2>
+
+      <!-- نص متحرك يتم التحكم به من script.js -->
+      <p class="intro">
+        Passionate about learning
+        <span class="typing"></span>
+      </p>
+
+      <!-- أزرار الانتقال السريعة -->
+      <div class="buttons">
+        <a class="btn primary" href="#projects">View My Work</a>
+        <a class="btn secondary" href="#contact">Get In Touch</a>
+        <a class="btn secondary" href="#cv">View CV</a>
+      </div>
+
+      <!-- رابط يشجع الزائر على التصفح -->
+      <a href="#about" class="scroll-hint">
+        Scroll to explore ↓
+      </a>
+
+    </div>
+
+    <!-- الصورة الشخصية الكرتونية + روابط السوشيال -->
+    <div class="hero-image">
+
+      <img src="assets/girl-new.png" alt="Sarah Illustration">
+
+      <div class="social">
+
+        <a href="https://x.com/Sara45_as"
+           target="_blank"
+           title="Twitter / X">
+          𝕏
+        </a>
+
+        <a href="#"
+           title="GitHub Coming Soon">
+          ⌘
+        </a>
+
+        <a href="https://www.linkedin.com/in/sarah-alwadi1"
+           target="_blank"
+           title="LinkedIn">
+          in
+        </a>
+
+        <a href="mailto:sarahalwadi5566@gmail.com"
+           title="Email">
+          ✉
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       ABOUT SECTION
+       نبذة شخصية مختصرة مع بطاقات تعريفية
+  ========================= -->
+  <section id="about" class="section">
+
+    <p class="badge">
+      ● ABOUT ME
+    </p>
+
+    <h2>
+      Building digital solutions with purpose
+    </h2>
+
+    <p class="section-desc">
+      I am a passionate Computer Science graduate with a strong interest
+      in technology, creativity, and continuous growth. I enjoy exploring
+      artificial intelligence, web development, SQL, and digital design
+      while creating modern and meaningful digital experiences.
+    </p>
+
+    <!-- بطاقات تبرز أسلوب العمل والقيم -->
+    <div class="about-highlights">
+
+      <div class="highlight-card">
+        <span>🚀</span>
+        <h3>Growth Mindset</h3>
+        <p>
+          Always learning, improving, and exploring new technologies.
+        </p>
+      </div>
+
+      <div class="highlight-card">
+        <span>💡</span>
+        <h3>Creative Problem Solving</h3>
+        <p>
+          Combining logic and creativity to build meaningful digital experiences.
+        </p>
+      </div>
+
+      <div class="highlight-card">
+        <span>✨</span>
+        <h3>Modern Digital Vision</h3>
+        <p>
+          Passionate about creating clean, modern, and user-focused solutions.
+        </p>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       SKILLS SECTION
+       عرض المهارات التقنية والإبداعية
+  ========================= -->
+  <section id="skills" class="section">
+
+    <p class="badge">
+      ● SKILLS
+    </p>
+
+    <h2>
+      Tools & Technologies
+    </h2>
+
+    <!-- كروت المهارات -->
+    <div class="skills-grid">
+
+      <div class="skill-card">
+        <span>💻</span>
+        <h3>Front-End</h3>
+        <p>HTML, CSS, JavaScript & responsive websites</p>
+      </div>
+
+      <div class="skill-card">
+        <span>📱</span>
+        <h3>Flutter</h3>
+        <p>Building cross-platform mobile applications</p>
+      </div>
+
+      <div class="skill-card">
+        <span>🐍</span>
+        <h3>Python</h3>
+        <p>Programming, logic, and problem solving</p>
+      </div>
+
+      <div class="skill-card">
+        <span>🗄</span>
+        <h3>PHP & XAMPP</h3>
+        <p>Backend basics, databases, and local servers</p>
+      </div>
+
+      <div class="skill-card">
+        <span>🤖</span>
+        <h3>AI Learning</h3>
+        <p>Exploring artificial intelligence and smart solutions</p>
+      </div>
+
+      <div class="skill-card">
+        <span>🎨</span>
+        <h3>Figma & Canva</h3>
+        <p>UI design and creative digital content</p>
+      </div>
+
+    </div>
+
+  </section>
+<!-- =========================
+     PROJECTS SECTION
+========================= -->
+<section id="projects" class="section">
+
+  <p class="badge">
+    ● PROJECTS
+  </p>
+
+  <h2>
+    Things I've Built
+  </h2>
+
+  <!-- Projects Grid -->
+  <div class="projects-grid">
+
+    <!-- FIX ME PROJECT -->
+
+    <div class="project-card">
+
+      <!-- صورة المشروع -->
+
+
+      <img
+  src="assets/fixme.png"
+  alt="FIX ME Project"
+  class="project-image"
+/>
+      <!-- اسم المشروع -->
+
+      <h3>
+        FIX ME
+      </h3>
+
+      <!-- وصف -->
+
+      <p>
+    A smart workforce platform connecting contractors with skilled workers.
+      </p>
+
+      <!-- التقنيات -->
+
+      <div class="project-tech">
+
+        <span>Flutter</span>
+        <span>PHP</span>
+        <span>MySQL</span>
+        <span>Firebase</span>
+
+      </div>
+
+      <!-- الأزرار -->
+
+      <div class="project-links">
+
+        <!-- GitHub -->
+
+        <a
+           href="https://github.com/plplp5p/fix-me-project"
+            target="_blank"
+        >
+          GitHub ↗
+        </a>
+
+        <!-- الفيديو -->
+
+        <a
+          href="https://drive.google.com/file/d/1jV6XUZWOK81qvgGQYjvVwNStdDJxZIhz/view?usp=drive_link"
+          target="_blank"
+        >
+          Demo ↗
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <!-- =========================
+       CV SECTION
+       معاينة السيرة الذاتية وتحميلها
+  ========================= -->
+  <section id="cv" class="section cv-section">
+
+    <p class="badge">
+      ● RESUME
+    </p>
+
+    <h2>
+      My CV
+    </h2>
+
+    <p class="section-desc">
+      A quick look at my background, skills, and experience.
+    </p>
+
+    <!-- بطاقة معاينة السيرة الذاتية -->
+    <div class="cv-preview-card">
+
+      <!-- شريط علوي يشبه نافذة المتصفح -->
+      <div class="cv-topbar">
+
+        <div class="cv-dots">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <p>cv.pdf</p>
+
+        <a href="assets/cv.pdf" target="_blank">
+          Open
+        </a>
+
+      </div>
+
+      <!-- عرض ملف PDF داخل الصفحة -->
+      <div class="cv-frame">
+        <iframe src="assets/cv.pdf#toolbar=0&navpanes=0&scrollbar=0"></iframe>
+      </div>
+
+      <!-- خيارات السيرة الذاتية -->
+      <div class="cv-footer">
+
+        <p>
+          Last updated · 2026
+        </p>
+
+        <a class="btn primary"
+           href="assets/cv.pdf"
+           download>
+          Download CV
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       CONTACT SECTION
+       معلومات التواصل ونموذج الرسالة
+  ========================= -->
+  <section id="contact" class="section contact-section">
+
+  <!-- عنوان القسم -->
+
+  <p class="badge">
+    ● CONTACT
+  </p>
+
+  <h2>
+    Let’s Connect
+  </h2>
+
+  <!-- وصف بسيط -->
+
+  <p class="section-desc">
+    Open to opportunities, collaborations,
+    and creative digital projects.
+  </p>
+
+  <!-- بداية الكونتينر -->
+
+  <div class="contact-container">
+
+ <!-- =========================
+       QUICK RESPONSE CARD
+       بطاقة سرعة الرد
+  ========================= -->
+    <div class="response-card">
+
+  <span>⚡</span>
+
+  <div>
+
+    <h3>Quick Response</h3>
+
+    <p>
+      Usually replying within 24 hours.
+    </p>
+
+  </div>
+
+</div>
+    <!-- حالة التوفر -->
+
+    <div class="contact-status">
+
+      <span class="status-dot"></span>
+
+      <p>
+        Available for opportunities,
+        collaborations, and creative tech projects.
+      </p>
+
+    </div>
+
+   
+
+    <!-- كروت التواصل -->
+
+<div class="contact-cards">
+
+  <!-- GitHub -->
+
+  <a class="mini-contact-card"
+     href="https://github.com/YOUR-USERNAME"
+     target="_blank">
+
+    <span>
+  <img src="assets/github.png"
+       alt="GitHub">
+</span>
+
+    <div>
+
+      <h3>GitHub</h3>
+
+      <p>
+        github.com/YOUR-USERNAME
+      </p>
+
+    </div>
+
+  </a>
+
+  <!-- LinkedIn -->
+
+  <a class="mini-contact-card"
+     href="https://www.linkedin.com/in/sarah-alwadi1"
+     target="_blank">
+
+    <span>💼</span>
+
+    <div>
+
+      <h3>LinkedIn</h3>
+
+      <p>
+        Sarah Alwadi
+      </p>
+
+    </div>
+
+  </a>
+
+  <!-- X -->
+
+  <a class="mini-contact-card"
+     href="https://x.com/Sara45_as"
+     target="_blank">
+
+    <span>𝕏</span>
+
+    <div>
+
+      <h3>X / Twitter</h3>
+
+      <p>
+        @Sara45_as
+      </p>
+
+    </div>
+
+  </a>
+
+</div>
+
+<!-- الفورم -->
+
+<form class="contact-form"
+      action="https://formspree.io/f/xlgvbvzl"
+      method="POST">
+
+  <input type="text"
+         name="name"
+         placeholder="Your name"
+         required />
+
+  <input type="email"
+         name="email"
+         placeholder="Your email"
+         required />
+
+  <textarea
+    name="message"
+    placeholder="Write your message..."
+    required></textarea>
+
+  <button type="submit">
+    Send Message ✨
+  </button>
+
+</form>
+
+
+</div>
+
+</section>
+
+
+  <!-- =========================
+       FOOTER
+       نهاية الموقع
+  ========================= -->
+  <footer>
+    <p>
+      © 2026 Sarah Alwadai · Built with HTML & CSS
+    </p>
+  </footer>
+
+  <!-- ربط ملف JavaScript لتفعيل التأثيرات مثل الكتابة المتحركة -->
+  <script src="script.js"></script>
+
+</body>
+
+</html>
