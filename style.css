@@ -1052,11 +1052,10 @@ footer{
    RESPONSIVE DESIGN
    يجعل الموقع مناسبًا للجوال والشاشات الصغيرة
 ========================= */
-
 @media(max-width: 950px){
 
   nav{
-    padding: 20px 6%;
+    padding: 14px 6%;
   }
 
   ul{
@@ -1066,10 +1065,45 @@ footer{
   .hero{
     flex-direction: column;
     text-align: center;
+    padding-top: 140px;
+    gap: 35px;
   }
 
   h1{
-    font-size: 48px;
+    font-size: 46px;
+    line-height: 1.1;
+  }
+
+  .hero h2{
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .hero p{
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .hero-buttons{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hero-buttons a{
+    width: 260px;
+    text-align: center;
+  }
+
+  .hero-image{
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .under-image,
+  .social-links{
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
   }
 
   .about-highlights,
@@ -1083,28 +1117,15 @@ footer{
     flex-direction: column;
   }
 
-  .hero-image{
-    width: 100%;
-    max-width: 360px;
+  .response-card,
+  .contact-status{
+    width: 90%;
+    text-align: center;
   }
 
   .cv-frame{
     height: 520px;
   }
-}
-
-/* =========================
-   SECTION SCROLL POSITION
-   ضبط مكان ظهور الأقسام
-========================= */
-
-#about,
-#skills,
-#cv,
-#projects,
-#contact{
-
-  scroll-margin-top: 40px;
 }
 
 /* =========================
