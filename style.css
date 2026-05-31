@@ -1052,91 +1052,7 @@ footer{
    RESPONSIVE DESIGN
    يجعل الموقع مناسبًا للجوال والشاشات الصغيرة
 ========================= */
-@media(max-width: 950px){
 
-  nav{
-    padding: 14px 6%;
-  }
-
-ul{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  width: 100%;
-  margin-top: 15px;
-}
-
-ul li a{
-  font-size: 13px;
-}
-   
-
-  .hero{
-    flex-direction: column;
-    text-align: center;
-    padding-top: 140px;
-    gap: 35px;
-  }
-
-  h1{
-    font-size: 46px;
-    line-height: 1.1;
-  }
-
-  .hero h2{
-    font-size: 24px;
-    line-height: 1.4;
-  }
-
-  .hero p{
-    font-size: 16px;
-    line-height: 1.8;
-  }
-
-  .hero-buttons{
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .hero-buttons a{
-    width: 260px;
-    text-align: center;
-  }
-
-  .hero-image{
-    width: 100%;
-    max-width: 320px;
-  }
-
-  .under-image,
-  .social-links{
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 16px;
-  }
-
-  .about-highlights,
-  .skills-grid,
-  .projects-grid,
-  .contact-cards{
-    grid-template-columns: 1fr;
-  }
-
-  .contact-cards{
-    flex-direction: column;
-  }
-
-  .response-card,
-  .contact-status{
-    width: 90%;
-    text-align: center;
-  }
-
-  .cv-frame{
-    height: 520px;
-  }
-}
 
 /* =========================
    CONTACT CREATIVE STATUS
@@ -1402,13 +1318,186 @@ ul li a{
 
 }
 
-@media(max-width: 768px){
+/* =========================
+   RESPONSIVE DESIGN
+   تنسيق التابلت والجوال بطريقة مرتبة ومجمعة في مكان واحد
+========================= */
 
-  section{
-    padding: 80px 6%;
+/* شاشات التابلت: نجعل الأقسام عمودية ونقلل الأحجام */
+@media(max-width: 950px){
+
+  nav{
+    padding: 14px 6%;
+    flex-wrap: wrap;
   }
 
-  h2{
+  ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+    width: 100%;
+    margin-top: 15px;
+  }
+
+  ul li a{
+    font-size: 13px;
+  }
+
+  .hero{
+    flex-direction: column;
+    text-align: center;
+    padding-top: 90px;
+    gap: 35px;
+  }
+
+  h1{
+    font-size: 46px;
+    line-height: 1.1;
+  }
+
+  .hero h2{
+    font-size: 24px;
+    line-height: 1.4;
+  }
+
+  .hero p,
+  .intro{
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .buttons{
+    justify-content: center;
+  }
+
+  .hero-image{
+    width: 100%;
+    max-width: 320px;
+  }
+
+  .about-highlights,
+  .skills-grid,
+  .projects-grid{
+    grid-template-columns: 1fr;
+  }
+
+  .contact-cards{
+    flex-direction: column;
+  }
+
+  .response-card,
+  .contact-status{
+    width: 90%;
+    text-align: center;
+  }
+
+  .cv-frame{
+    height: 520px;
+  }
+}
+
+
+/* شاشات الجوال: نخفي القائمة العلوية ونرتب الهيرو والكروت */
+@media(max-width: 768px){
+
+  section,
+  .section{
+    padding: 70px 6%;
+  }
+
+  nav{
+    padding: 16px 6%;
+    align-items: center;
+  }
+
+  .logo{
+    width: 62px;
+    height: 62px;
+  }
+
+  ul{
+    display: none;
+  }
+
+  .hire-btn{
+    display: none;
+  }
+
+  .hero{
+    min-height: auto;
+    padding: 90px 6% 60px;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+  }
+
+  .badge{
+    margin: 0 auto 20px;
+    font-size: 14px;
+    padding: 10px 18px;
+  }
+
+  h1{
+    font-size: 42px;
+    line-height: 1.1;
+  }
+
+  h1 span,
+  .gradient-text{
+    display: block;
+    font-size: 48px;
+    line-height: 1.1;
+  }
+
+  .hero h2{
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 18px;
+  }
+
+  .intro,
+  .hero p{
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 330px;
+    margin: 18px auto 0;
+  }
+
+  .buttons{
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+    margin-top: 28px;
+  }
+
+  .buttons a,
+  .btn{
+    width: 100%;
+    max-width: 310px;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .hero-image{
+    width: 100%;
+    max-width: 300px;
+    margin: 10px auto 0;
+  }
+
+  .social{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .scroll-hint{
+    margin-top: 20px;
+    font-size: 14px;
+  }
+
+  .section > h2,
+  .contact-section h2{
     font-size: 42px;
     line-height: 1.15;
     word-break: normal;
@@ -1420,78 +1509,57 @@ ul li a{
   }
 
   .skill-card,
-  .project-card,
-  .cv-card,
-  .contact-card{
+  .project-card{
     width: 100%;
     max-width: 100%;
     padding: 28px 22px;
   }
 
-  .cv-card{
-    overflow: hidden;
+  .cv-preview-card{
+    width: 100%;
+    max-width: 100%;
   }
 
-  .cv-frame,
-  iframe{
+  .cv-frame{
     width: 100%;
     max-width: 100%;
     height: 420px;
+    padding: 14px;
   }
 
-  .cv-actions{
+  .cv-footer{
     flex-direction: column;
     gap: 15px;
     text-align: center;
   }
 
-  .cv-actions a,
-  .cv-actions button{
+  .cv-footer .btn{
     width: 100%;
+    text-align: center;
   }
-
-  .badge{
-    font-size: 15px;
-    padding: 12px 20px;
-  }
-
-  nav{
-    height: auto;
-    padding: 14px 6%;
-  }
-
-  .logo{
-    width: 70px;
-    height: 70px;
-  }
-
-  .contact-btn{
-    padding: 14px 24px;
-    font-size: 15px;
-  }
-}
-
-@media(max-width: 768px){
 
   #contact{
     padding-top: 80px;
   }
 
-  .contact-card,
+  .contact-status,
+  .response-card,
   .mini-contact-card{
     width: 90%;
     max-width: 420px;
     margin: 18px auto;
-    padding: 24px 22px;
+    padding: 22px;
     border-radius: 28px;
   }
 
-  .contact-card h3,
+  .mini-contact-card{
+    flex: none;
+  }
+
   .mini-contact-card h3{
     font-size: 22px;
   }
 
-  .contact-card p,
   .mini-contact-card p{
     font-size: 16px;
     word-break: break-word;
@@ -1501,12 +1569,42 @@ ul li a{
     width: 34px;
     height: 34px;
   }
+}
 
-  .contact-status,
-  .response-card{
-    width: 90%;
-    max-width: 420px;
-    margin: 18px auto;
-    padding: 22px;
+
+/* الجوالات الصغيرة جدًا: تقليل النصوص والصورة أكثر */
+@media(max-width: 420px){
+
+  h1{
+    font-size: 38px;
+  }
+
+  h1 span,
+  .gradient-text{
+    font-size: 42px;
+  }
+
+  .section > h2,
+  .contact-section h2{
+    font-size: 36px;
+  }
+
+  .hero h2{
+    font-size: 18px;
+  }
+
+  .intro,
+  .hero p{
+    font-size: 14px;
+  }
+
+  .hero-image{
+    max-width: 260px;
+  }
+
+  .social a{
+    width: 52px;
+    height: 52px;
+    font-size: 20px;
   }
 }
