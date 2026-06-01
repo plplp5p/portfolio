@@ -109,7 +109,7 @@ body{
 .bg-shape{
   position: absolute;
   font-size: 48px;
-  opacity: 0.22;
+  opacity: 0.08;
   filter: drop-shadow(0 0 12px rgba(96,165,250,.35));
   animation: floatMove linear infinite;
 }
@@ -1412,5 +1412,136 @@ footer{
     width: 52px;
     height: 52px;
     font-size: 20px;
+  }
+}
+
+/* =========================
+   FINAL CONTACT MOBILE FIX
+   ضبط كروت التواصل في الجوال: مسافات ثابتة، عرض أنيق، وخلفية أقل إزعاجًا
+========================= */
+
+@media(max-width: 768px){
+
+  /* تقليل المسافة العلوية داخل قسم التواصل */
+  #contact{
+    padding-top: 60px;
+  }
+
+  /* تقليل المسافة بين عنوان التواصل وبداية الكروت */
+  .contact-container{
+    width: 100%;
+    max-width: 420px;
+    margin: 32px auto 0;
+  }
+
+  /* تنسيق بطاقة سرعة الرد */
+  .response-card{
+    width: 100%;
+    max-width: 340px;
+    min-height: 84px;
+    margin: 0 auto 16px;
+    padding: 16px 20px;
+    border-radius: 24px;
+  }
+
+  /* تنسيق بطاقة التوفر */
+  .contact-status{
+    width: 100%;
+    max-width: 340px;
+    min-height: 104px;
+    margin: 0 auto 28px;
+    padding: 18px 20px;
+    border-radius: 24px;
+  }
+
+  .contact-status p{
+    font-size: 15px;
+    line-height: 1.7;
+  }
+
+  /* جعل كروت GitHub / LinkedIn / X تحت بعض وبمسافات متساوية */
+  .contact-cards{
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  /* ضبط حجم كروت التواصل حتى لا تكون ضخمة على الجوال */
+  .mini-contact-card{
+    width: 100%;
+    min-height: 96px;
+    margin: 0;
+    padding: 18px 20px;
+    border-radius: 24px;
+    flex: none;
+  }
+
+  .mini-contact-card h3{
+    font-size: 21px;
+    margin-bottom: 6px;
+  }
+
+  .mini-contact-card p{
+    font-size: 15px;
+    line-height: 1.5;
+    word-break: break-word;
+  }
+
+  .mini-contact-card span{
+    width: 36px;
+    min-width: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .mini-contact-card img{
+    width: 32px;
+    height: 32px;
+  }
+
+  /* ضبط الفورم حتى لا يلتصق بالكروت */
+  .contact-form{
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+    padding: 24px 20px;
+  }
+}
+
+
+/* =========================
+   EXTRA SMALL MOBILE FIX
+   تحسين إضافي للجوالات الصغيرة جدًا
+========================= */
+
+@media(max-width: 420px){
+
+  .contact-container,
+  .contact-cards,
+  .contact-form{
+    max-width: 320px;
+  }
+
+  .response-card,
+  .contact-status,
+  .mini-contact-card{
+    max-width: 320px;
+  }
+
+  .mini-contact-card{
+    min-height: 92px;
+    padding: 16px 18px;
+  }
+
+  .mini-contact-card h3{
+    font-size: 20px;
+  }
+
+  .mini-contact-card p{
+    font-size: 14px;
   }
 }
