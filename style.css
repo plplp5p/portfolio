@@ -109,7 +109,7 @@ body{
 .bg-shape{
   position: absolute;
   font-size: 48px;
-  opacity: 0.08;
+  opacity: 0.06;
   filter: drop-shadow(0 0 12px rgba(96,165,250,.35));
   animation: floatMove linear infinite;
 }
@@ -1387,7 +1387,7 @@ footer{
 
   h1 span,
   .gradient-text{
-    font-size: 42px;
+    font-size: 36px;
   }
 
   .section > h2,
@@ -1543,5 +1543,36 @@ footer{
 
   .mini-contact-card p{
     font-size: 14px;
+  }
+}
+
+@media(max-width: 768px){
+
+  .contact-cards{
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+  }
+
+  .mini-contact-card{
+    width: 64px;
+    height: 64px;
+    min-height: 64px;
+    padding: 0;
+    border-radius: 50%;
+    justify-content: center;
+  }
+
+  .mini-contact-card div{
+    display: none;
+  }
+
+  .mini-contact-card span{
+    font-size: 28px;
+  }
+
+  .mini-contact-card img{
+    width: 30px;
+    height: 30px;
   }
 }
